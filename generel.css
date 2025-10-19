@@ -1,3 +1,269 @@
-header {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* menu */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 208.845px;
+  height: 17.57px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #fbf7ee;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: Helvetica Neue;
+}
+
+.menu a:hover {
+  color: #c84237;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #c84237;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 800px) {
+  nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    background-color: #000000;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  /* Når checkboxen er aktiv → vis menuen */
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+
+  /* --- Animation: 3 streger → X --- */
+  #menu-toggle:checked + .burger span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  #menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .burger span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+/* menu slut */
+
+body {
+  background-color: #fbf7ee;
+}
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 a:hover {
+  opacity: 0.6;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: Montserrat;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  padding: 40px;
+}
+
+@media (width>=800px) {
+  h1 {
+    font-family: Montserrat;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    padding: 40px;
+  }
+}
+
+h2 {
+  font-family: Helvetica Neue;
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+  padding: 30px;
+}
+
+@media (width>=800px) {
+  h2 {
+    font-family: Helvetica Neue;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+  }
+}
+
+h3 {
+  font-family: Caveat;
+  color: #000000;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 35px;
+}
+h4 {
+  font-family: Helvetica Neue;
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+p {
+  font-family: Helvetica Neue;
+  color: #000000;
+  gap: 20px;
+  margin: 35px;
+  line-height: 2rem;
+}
+.liste {
+  font-family: Helvetica Neue;
+}
+
+/* forside */
+.forside_amani {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.insp_forside {
+  background-color: #c84237;
+  padding-bottom: 30px;
+}
+
+/* forside slut*/
+
+/* Sæsonens trends */
+
+.lille_overskrift {
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between; /* Venstre + højre side */
+  align-items: center;
+  padding: 20px 40px;
+  font-family: Helvetica Neue;
+  text-decoration-color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #c84237;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-right a {
+  margin-left: 15px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Lægger alt under hinanden */
+    text-align: center;
+  }
+
+  .footer-right p {
+    text-align: center;
+  }
+
+  .footer-left a {
+    margin: 0 10px;
+  }
+}
+/* footer slut */

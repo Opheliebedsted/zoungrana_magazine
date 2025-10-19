@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoungrana Magazine</title>
     <link rel="stylesheet" href="generel.css" />
-    <link rel="stylesheet" href="laoyout.css" />
-  </head>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<link rel="icon" type="image/x-icon" href="imgs/image 8.png" />
+</head>
   <body>
     <header>
+       <div class="logo">
+        <a href="/">
+          <img src="menu/zm_logo.png" alt="Logo" />
+        </a>
+      </div>
+        <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <nav>
-        <ul>
+         <ul class="menu">
           <li><a href="saesonens_trends.html">Sæsonens trends</a></li>
           <li><a href="inspiration.html">Inspiration</a></li>
           <li><a href="interview.html">Interview</a></li>
@@ -18,8 +34,58 @@
       </nav>
     </header>
     <main>
-      <h1>Interview med Amani Mabonga</h1>
+      <section class="interview med amani">
+        <h1>Interview med Amani Mabonga</h1>
+        <div class="amani_imgs">
+        <img src="imgs/interview_1.png" alt="Billede taget i et spejl af Amanis outfit" class="amani-1" />
+        <img src="imgs/interview_2.png" alt="Streetfoto af Amani" class="amani-2"/>
+        <img src="imgs/interview_3.png" alt="Streetfoto af Amani" class="amani-3" />
+        </div>
+    <div class="papir">
+      <section class="papir-text">
+          <h3>Hvad er fashion for dig?</h3>
+          <p>Fashion for mig er en måde at udtrykke mig selv på, det giver mig et selvtillidsboost til dagen og jeg kan mærke på mig selv, at min dag bliver meget bedre med et godt outfit.</p>
+          <h3>Hvornår begyndte du at få interesse for fashion</h3>
+          <p>På gymnasiet startede jeg med at tænke mere over hvad jeg tog på, dog var det mest for at passe ind i de sociale sammenhænge. Min egen stil har jeg faktisk først dyrket mere efter gymnasiet, så det er stadig lidt nyt for mig, men jeg elsker at prøve forskellige styles af og udfordre mig selv.</p>
+          <h3>Hvem/hvad inspirerer dig?</h3>
+          <p>Jeg har egentlig ikke bestemte personer, jeg henter inspiration fra. For mig opstår den mest, når jeg scroller gennem sociale medier og falder over fede items eller spændende outfits. Særligt Instagram, Pinterest og TikTok er steder, hvor jeg finder masser af nye idéer og inspiration til min stil.</p>
+          <h3>Beskriv din stil med 3-5 ord</h3>
+          <ul class="liste">
+            <li>Eksperimenterende</li>
+            <li>Feminin</li>
+            <li>Classy</li>
+            <li>Street</li>
+            <li>Detaljeorienteret</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
     </main>
-    <footer></footer>
+
+     <footer class="footer">
+      <div class="footer-left">
+        <p>📞 <a href="tel:+4542444284">+45 42 44 42 84</a></p>
+        <p>✉️ <a href="opbe0001@stud.ek.dk">opbe0001@stud.ek.dk</a></p>
+      </div>
+      <div class="footer-right">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
   </body>
 </html>

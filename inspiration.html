@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoungrana Magazine</title>
     <link rel="stylesheet" href="generel.css" />
-    <link rel="stylesheet" href="laoyout.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="imgs/image 8.png" />
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="/">
+          <img src="menu/zm_logo.png" alt="Logo" />
+        </a>
+      </div>
+        <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="saesonens_trends.html">Sæsonens trends</a></li>
           <li><a href="inspiration.html">Inspiration</a></li>
           <li><a href="interview.html">Interview</a></li>
@@ -21,16 +43,46 @@
       <section>
         <h1>Ugens inspiration</h1>
       </section>
-      <section>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </section>
+        <div class="grid_3-col">
+          <img src="imgs/insp_1.png" alt="Streetfoto af en kvinde" />
+          <img src="imgs/insp_4.png" alt="Streetfoto af en mands outfit" />
+          <img
+            src="imgs/insp_5.png"
+            alt="Streetfoto af en kvinde i en pink blazer og rose halskæde"
+          />
+          <img src="imgs/insp_6.png" alt="Billede af en T-shirt" />
+          <img src="imgs/insp_2.png" alt="Streetfoto af en kvinde og en mand" />
+        
+          <img
+            src="imgs/insp_7.png"
+            alt="Streetfoto af en kvinde der poserer"
+          />
+            <img src="imgs/insp_3.png" alt="Billede af en model fra modeshow" />
+        </div>
     </main>
-    <footer></footer>
+  <footer class="footer">
+      <div class="footer-left">
+        <p>📞 <a href="tel:+4542444284">+45 42 44 42 84</a></p>
+        <p>✉️ <a href="opbe0001@stud.ek.dk">opbe0001@stud.ek.dk</a></p>
+      </div>
+      <div class="footer-right">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
   </body>
 </html>

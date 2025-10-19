@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoungrana Magazine</title>
     <link rel="stylesheet" href="generel.css" />
-    <link rel="stylesheet" href="laoyout.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="imgs/image 8.png" />
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="/">
+          <img src="menu/zm_logo.png" alt="Logo" />
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="saesonens_trends.html">Sæsonens trends</a></li>
           <li><a href="inspiration.html">Inspiration</a></li>
           <li><a href="interview.html">Interview</a></li>
@@ -19,20 +41,101 @@
     </header>
     <main>
       <section>
-        <h1>Fashion med mening: Amani fortæller sin historie</h1>
-        <p>
-          Hvordan finder man egentlig inspiration til sin stil, og hvad betyder
-          fashion i dag? I dette interview med Amani Mabonga dykker vi ned i
-          personlige oplevelser, kreative processer og de små detaljer, der gør
-          mode levende. Læs med, når vi taler om autenticitet og hvor
-          inspirationen kommer fra og få et ærligt indblik i, hvordan fashion
-          både kan være identitet og selvudtryk.
-        </p>
-        <img src="" alt="" />
+        <h1>
+          <a href="interview.html">
+            Fashion med mening: <br />
+            Amani fortæller sin historie</a
+          >
+        </h1>
+        <div class="forside_amani">
+          <img src="imgs/forside_1.png" alt="Billede af Amani Mabonga" />
+          <img src="imgs/forside_2.png" alt="Billede af Amani Mabonga" />
+        </div>
+        <div class="container_2">
+          <p>
+            Hvordan finder man egentlig inspiration til sin stil, og hvad
+            betyder fashion i dag? I dette interview med Amani Mabonga dykker vi
+            ned i personlige oplevelser, kreative processer og de små detaljer,
+            der gør mode levende.
+          </p>
+          <p>
+            Læs med, når vi taler om autenticitet og hvor inspirationen kommer
+            fra og få et ærligt indblik i, hvordan fashion både kan være
+            identitet og selvudtryk.
+          </p>
+        </div>
       </section>
-      <section></section>
-      <section></section>
+      <section class="insp_forside">
+        <h1><a href="inspiration.html">Ugens inspiration</a></h1>
+        <div class="forside_inspiration_imgs">
+          <img
+            src="imgs/forside_3.png"
+            alt="Mannequindukke med pelsjakke og hoodie på"
+          />
+          <img src="imgs/forside_4.png" alt="" />
+          <img src="imgs/forside_5.png" alt="" />
+          <img src="imgs/forside_6.png" alt="" />
+        </div>
+        <div class="container_1">
+          <p>
+            Inspiration er kernen i fashion og skaber grundlaget for både trends
+            og personlig stil. Den kan opstå overalt i naturen, kunsten, rejser
+            eller i hverdagens øjeblikke. Sociale medier som Instagram giver
+            hurtig adgang til globale indtryk, mens street style viser, hvordan
+            mennesker fortolker mode på unikke måder.
+          </p>
+          <p>
+            For designere bliver inspiration ofte til hele kollektioner, men
+            også i hverdagen kan man hente idéer til at udvikle sin egen
+            garderobe. Det handler om at kombinere forskellige elementer og
+            skabe noget personligt. Inspiration gør fashion levende, konstant
+            foranderligt og fuld af nye muligheder.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h1><a href="saesonens_trends.html">Fra show til street</a></h1>
+        <img
+          src="imgs/forside_7.jpg"
+          alt="En kvinde der holder en kop kaffe i hænderne, med et modeblad placeret på sit ene lår"
+        />
+        <p>
+          Fra show til street handler om rejsen fra catwalkens spektakulære
+          univers til hverdagsgadernes personlige udtryk. På runwayen ser vi
+          ofte de mest dristige idéer, hvor farver, snit og materialer skubber
+          til grænserne for, hvad fashion kan være. Når disse trends rammer
+          gaden, bliver de fortolket på nye måder tilpasset individuelle
+          stilarter og praktiske behov. Det er her, moden virkelig lever: i
+          mødet mellem high fashion og street style. Fra show til street er
+          transformationen, der gør mode tilgængelig, relevant og inspirerende
+          for alle.
+        </p>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-left">
+        <p>📞 <a href="tel:+4542444284">+45 42 44 42 84</a></p>
+        <p>✉️ <a href="opbe0001@stud.ek.dk">opbe0001@stud.ek.dk</a></p>
+      </div>
+      <div class="footer-right">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
